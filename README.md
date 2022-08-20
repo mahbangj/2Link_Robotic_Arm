@@ -320,10 +320,11 @@ end
   The code is provided in the files.
  
   <div align = "center"> 
-  <img src = "https://user-images.githubusercontent.com/47887796/184105610-793b2bc3-27c2-476f-9248-fab5142691af.png" width = "400"> 
+  <img src = "https://user-images.githubusercontent.com/47887796/185763609-409396f4-a32d-463a-9d3f-63957d514288.png" width = "400"> 
 <br>
-  <img src = "https://user-images.githubusercontent.com/47887796/184106937-d1d174af-2a99-4707-9ffe-a72f2afb2b4e.png" width = "400"> 
+  <img src = "https://user-images.githubusercontent.com/47887796/185763671-6bfaa6b0-4992-4189-b788-3e1e9c67192d.png" width = "400"> 
 </div>
+
 
 </div>
 

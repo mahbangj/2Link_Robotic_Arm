@@ -196,12 +196,21 @@ T4=[cos(theta4) -sin(theta4) 0 a4;
 
 ### Inverse Kinematics
 <div align="justify">
-  Source: Robot Modeling and Control , Spong
+With as many nonzero DH parameters as there are inverse
+kinematics problems, the complexity increases.For our manipulator, one of the ai, d2 and d3 are zero, α1 and α3 are 0 and
+α2 is −π2 . Thus, geometric approach is the simplest and most
+natural approach in this case. This geometric approach entails projecting the manipulator
+onto the Xi−1-Yi−1 plane and solving a simple trigonometry
+problem to solve for the joint variable qi.
+<br>Source: Robot Modeling and Control , Spong
 
 <div align = "center"> 
   <img src = "https://user-images.githubusercontent.com/47887796/184095680-54da5ca6-bc73-4e5a-909b-7abd6f65d59f.PNG" width = "600"> 
 <br><br><br>
   <img src = "https://user-images.githubusercontent.com/47887796/184096136-8e7751cb-10d8-4a33-9ecc-317429b3e1b3.PNG" width = "600"> 
+  <br><br><br>
+    <img src = "https://user-images.githubusercontent.com/47887796/185741591-17478c8d-58a4-4e59-a248-b2cd2bc31202.PNG" width = "600"> 
+
 </div>
 </div>  
 

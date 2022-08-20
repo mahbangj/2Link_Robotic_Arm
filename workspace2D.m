@@ -2,10 +2,10 @@ clc;
 clear;
 close all;
 % D-H Parameters
-a1 = -0.12; d1 = 0.46; alpha1 = -pi/2  ; theta1 = 0;
-a2 = 0.67 ; d2 = 0   ; alpha2 = 0      ; theta2 = -pi/4;
-a3 = 0    ; d3 = 0   ; alpha3 = -pi/2  ; theta3 = 3*pi/4;
-a4 = 0    ; d4 = 0.7 ; alpha4 = pi/2   ; theta4 = 0;
+a1 = 0        ; d1 = 0.46; alpha1 = 0  ; theta1 = 0;
+a2 = -0.06821 ; d2 = 0   ; alpha2 = -pi/2      ; theta2 = 0;
+a3 = 0.224    ; d3 = 0   ; alpha3 = 0  ; theta3 = 0;
+a4 = 0    ; d4 = 0.7 ; alpha4 = -pi/2   ; theta4 = 0;
 
 
 % Axis Properties
@@ -36,9 +36,16 @@ A34 = [cos(theta4), -cos(alpha4)*sin(theta4), sin(alpha4)*sin(theta4),a4*cos(the
        sin(theta4), cos(alpha4)*cos(theta4), -sin(alpha4)*cos(theta4), a4*sin(theta4);
        0, sin(alpha4), cos(alpha4),d4;
        0, 0, 0, 1 ];
-
+% A45 = [cos(theta5), -cos(alpha5)*sin(theta5), sin(alpha5)*sin(alpha5),a5*cos(alpha5);
+%        sin(theta5), cos(alpha5)*cos(theta5), -sin(alpha5)*cos(theta5),a5*sin(theta5);
+%        0, sin(alpha5), cos(alpha5),d5;
+%        0, 0, 0, 1 ];
+% A56 = [cos(theta6), -cos(alpha6)*sin(theta6), sin(alpha6)*sin(theta6),a6*cos(theta6);
+%        sin(theta6), cos(alpha6)*cos(theta6), -sin(alpha6)*cos(theta6),a6*sin(theta6);
+%        0, sin(alpha6), cos(alpha6),d6;
+%        0, 0, 0, 1 ];
 A06 = A01*A12*A23*A34;
-Envelope_1 = plot(A06(1,4), A06(3,4),'r.')
+Envelope_1 = plot3(A06(1,4) ,A06(3,4),'r.')
 hold 'all'
 
 end
